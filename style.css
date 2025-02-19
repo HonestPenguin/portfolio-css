@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+  .nav-toggle { 
+    display: none !important;
+  }
+
+  .nav {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-item a {
+    font-size: 16px;
+    padding: 10px;
+    color: #000 !important;
+    text-decoration: none;
+    visibility: visible !important;
+  }
+}
