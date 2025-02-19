@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  .nav-toggle { 
+    display: none !important; /* Dölj hamburgermenyn */
+  }
+
+  .nav {
+    display: flex !important; /* Visa navigationslänkarna */
+    justify-content: center;
+  }
+
+  .nav-item a {
+    font-size: 14px; /* Mindre textstorlek */
+    padding: 5px; /* Minska mellanrummet mellan länkar */
+  }
+}
