@@ -1,15 +1,20 @@
 @media (max-width: 768px) {
   .nav-toggle { 
-    display: none !important; /* Dölj hamburgermenyn */
+    display: none !important; /* Dölj hamburgermenyn om det är avsiktligt */
   }
 
   .nav {
-    display: flex !important; /* Visa navigationslänkarna */
+    display: flex !important; 
+    flex-direction: column; /* Gör att länkar staplas vertikalt */
     justify-content: center;
+    align-items: center; /* Centrera länkarna */
+    flex-wrap: wrap; /* Låt länkarna brytas om de inte får plats */
   }
 
   .nav-item a {
-    font-size: 14px; /* Mindre textstorlek */
-    padding: 5px; /* Minska mellanrummet mellan länkar */
+    font-size: 16px; /* Gör texten mer läsbar */
+    padding: 8px 10px; /* Mer utrymme runt texten */
+    color: #000; /* Se till att texten syns mot bakgrunden */
+    text-decoration: none; /* Ta bort understrykning om det behövs */
   }
 }
