@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
   .nav-toggle { 
-    display: none !important;
+    display: block !important; /* Behåll hamburgermenyn */
   }
 
   .nav {
@@ -9,13 +9,21 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    position: absolute;
+    top: 60px; /* Anpassa efter din header-höjd */
+    background-color: #000; /* Bakgrund för bättre synlighet */
+    width: 100%;
   }
 
   .nav-item a {
     font-size: 16px;
-    padding: 10px;
-    color: #000 !important;
+    padding: 12px;
+    color: #fff !important;
     text-decoration: none;
     visibility: visible !important;
+  }
+
+  .nav.open {
+    display: flex !important; /* Visa menyn när den är öppen */
   }
 }
