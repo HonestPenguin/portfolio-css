@@ -1,29 +1,21 @@
 @media (max-width: 768px) {
   .nav-toggle { 
-    display: block !important; /* Behåll hamburgermenyn */
+    display: none !important; /* Dölj hamburgermenyn */
   }
 
   .nav {
     display: flex !important;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-    position: absolute;
-    top: 60px; /* Anpassa efter din header-höjd */
-    background-color: #000; /* Bakgrund för bättre synlighet */
     width: 100%;
   }
 
   .nav-item a {
     font-size: 16px;
-    padding: 12px;
+    padding: 10px;
     color: #fff !important;
     text-decoration: none;
     visibility: visible !important;
-  }
-
-  .nav.open {
-    display: flex !important; /* Visa menyn när den är öppen */
   }
 }
